@@ -1,0 +1,49 @@
+
+div.scroll{
+    position: relative;
+}
+
+div.tsing{
+    position: relative;
+    height: 100px;
+    width: 80px;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+div.tsing img{
+    position: absolute;
+    width: 238px;
+    left: -80px;
+    top:-110px;
+}
+
+ul#button{
+    color: black;
+    display: inline-block;
+    margin: 0;
+    margin-top:30px;
+    margin-left: -20px;
+    padding: 0;
+}
+ul#button li{
+    width:3vw; /* 20% of the viewport width */
+    height: 3vw;
+    margin-left: 20px;
+    border: solid;
+    border-width: 1px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    border-color: gray;
+}
+
+.black{
+    background-color:gray;
+}
+
+a#load{
+    color: black;
+    font-size: 200%;
+}
