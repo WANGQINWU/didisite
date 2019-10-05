@@ -34,7 +34,7 @@ $(document).ready(function(){
             
             console.log(sensitive);
             res = "您是";
-            if(sensitive >=3){
+            if(sensitive >=2){
                  res += "敏感"
                 if(result.get(6)=='A'){
                     res += "痤疮"
