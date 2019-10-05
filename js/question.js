@@ -10,16 +10,31 @@ $(document).ready(function(){
             alert("please answer all questions")
         }else{
             var sensitive = 0;
-            if(result.get(2) == 'C' || result.get(2) == 'D' ||
-              result.get(3) == 'B' || result.get(3) == 'D' || result.get(3) == 'C' ||
-              result.get(10) == 'A' || result.get(11) == 'A'){
-                if(result.get(4) == 'A' || result.get(5) == 'A' || result.get(8) == 'A'){
-                    sensitive = 1;
-                }
+            if(result.get(2) == 'C' || result.get(2) == 'D'){
+                sensitive++;
+            }
+            if(result.get(3) == 'B' || result.get(3) == 'D' || result.get(3) == 'C' ){
+                sensitive++;
+            }
+            if(result.get(10) == 'A'){
+                sensitive++;
+            }
+            if(result.get(11) == 'A'){
+                sensitive++;
+            }
+            if(result.get(5) == 'A'){
+                sensitive++;
+            }
+            if(result.get(8) == 'A'){
+                sensitive++;
+            }
+            if(result.get(4) == 'A'){
+                sensitive++;
             }
             
+            console.log(sensitive);
             res = "您是";
-            if(sensitive === 1){
+            if(sensitive >=3){
                  res += "敏感"
                 if(result.get(6)=='A'){
                     res += "痤疮"
