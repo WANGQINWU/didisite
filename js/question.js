@@ -16,10 +16,10 @@ $(document).ready(function(){
             if(result.get(3) == 'B' || result.get(3) == 'D' || result.get(3) == 'C' ){
                 sensitive++;
             }
-            if(result.get(10) == 'A'){
+            if(result.get(10) == 'A' || result.get(10) == 'B'){
                 sensitive++;
             }
-            if(result.get(11) == 'A'){
+            if(result.get(11) == 'A' || result.get(11) == 'B'){
                 sensitive++;
             }
             if(result.get(5) == 'A'){
@@ -29,6 +29,9 @@ $(document).ready(function(){
                 sensitive++;
             }
             if(result.get(4) == 'A'){
+                sensitive++;
+            }
+            if(result.get(12) == 'A'){
                 sensitive++;
             }
             
@@ -49,7 +52,7 @@ $(document).ready(function(){
                     res += "接触性皮炎"
                 }
                 if(result.get(9)!='E'){
-                    res += "接触性皮炎"
+                    res += "激素依赖性皮炎"
                 }
             }else{
                  res += "非敏感"
